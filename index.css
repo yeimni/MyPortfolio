@@ -461,7 +461,7 @@ header nav ul li > .select.selected {
     font-weight: bold;
     color: rgba(255, 255, 255, 60%);
     font-family: 'Ubuntu', sans-serif;
-    width: 40rem;
+    width: 43rem;
 
     border-bottom: 0.15rem solid rgba(255, 255, 255, 40%);
     margin-bottom: 0.5rem;
@@ -499,7 +499,10 @@ header nav ul li > .select.selected {
     flex-direction : column;
     justify-content: flex-start;
 
-    color: rgba(255, 255, 255, 60%);
+    margin-right: 2rem;
+
+    font-weight: bold;
+    color: rgba(255, 255, 255);
 }
 
 .it {
