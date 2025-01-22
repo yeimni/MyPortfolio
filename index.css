@@ -1,0 +1,1029 @@
+body {
+    background-color: rgba(0, 0, 0, 90%);
+    z-index: 0;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    /*box-shadow: 2px 2px 7px 2px rgba(255, 255, 255, 20%);*/
+}
+
+header nav ul {
+    align-items : flex-end;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-end;
+
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+header nav ul li {
+    margin: 0 20px;
+    list-style: none;
+}
+
+header nav ul li > .select {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+
+header nav ul li > .select:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #e7b20d;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+
+    transform-origin: 0% 50%;
+}
+
+header nav ul li > .select:hover:after,
+header nav ul li > .select.selected {
+    transform: scaleX(1);
+}
+
+/*header nav ul li a:hover {*/
+
+/*}*/
+
+.fp-tableCell {
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+
+
+/* HOME */
+#title {
+    margin-left: 7rem;
+
+    width: 80rem;
+    height: 40rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+#title > .portfolio {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    margin-top: 10rem;
+
+    z-index: 10;
+}
+
+#title > .portfolio > a {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+
+    animation: bounce .5s ease infinite alternate;
+}
+
+#title > .portfolio > a :nth-child(1) {
+    animation-delay: .1s;
+}
+
+#title > .portfolio > a :nth-child(2) {
+    animation-delay: .2s;
+}
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #e7b20d,
+        0 2px 0 #e7b20d,
+        0 3px 0 #e7b20d,
+        0 4px 0 #e7b20d,
+        0 5px 0 #e7b20d,
+        0 6px 0 #e7b20d,
+        0 7px 0 #e7b20d,
+        0 8px 0 #e7b20d,
+        0 9px 0 #CCC,
+        0 50px 25px rgba(0, 0, 0, .2);
+    }
+}
+
+#title > .laptop {
+    transform: scaleX(-1);
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+}
+
+#title > .laptop > .dd {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 23rem;
+}
+
+#title > .laptop > .dd > .pp-img {
+    width: 12rem;
+
+    filter: brightness(50%);
+
+    animation: vibration .1s infinite;
+}
+
+#title > .laptop > .laptop-img {
+    margin-right: 5em;
+    margin-top: 10rem;
+
+    width: 35rem;
+    filter: brightness(60%);
+
+    /*animation: vibration .1s infinite;*/
+}
+
+@keyframes vibration {
+    from {
+        transform: rotate(2deg);
+    }
+    to {
+        transform: rotate(-2deg);
+    }
+}
+
+
+
+/* INTRODUCE */
+#introTitle {
+    align-items : flex-end;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+
+    width: 75rem;
+
+    margin-top: 3rem;
+}
+
+#introTitle > a {
+    font-size: 4rem;
+    font-family: 'Covered By Your Grace', cursive;
+    color: rgb(255, 255, 255);
+
+    text-decoration-line: underline;
+    text-decoration-color: rgb(231, 178, 13, 70%);
+
+    margin-left: 1rem;
+
+    flex: 1;
+}
+
+#introTitle > .top-list {
+    color: rgba(255, 255, 255, 60%);
+
+    margin-bottom: 1rem;
+}
+
+#introTitle > .top-list > .num {
+    background-color: rgba(255, 255, 255);
+    color: rgba(0, 0, 0);
+    font-weight: bold;
+
+    border-radius: 50%;
+    border: 0.1rem solid rgb(231, 178, 13);
+
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#introContainer {
+    width: 75rem;
+    height: 36rem;
+
+    background-color: rgba(255, 255, 255, 20%);
+    border-radius: 2rem;
+
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+#introContainer > .introTop > .text {
+    font-family: 'Gowun Batang', serif;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 80%);
+    font-weight: bold;
+}
+
+#introContainer > .introTop > .text::after {
+    content: '';
+    margin-left: .4rem;
+    border-right: 2px solid #777;
+    animation: cursor .9s infinite steps(2);
+}
+
+#introContainer > .introBottom {
+    font-size: 1.7rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 60%);
+
+    margin-top: 3rem;
+
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.ye {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(231, 178, 13, 70%);
+}
+
+
+
+
+/* ABOUT */
+#aboutTitle {
+    align-items : flex-end;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+
+    width: 75rem;
+
+    margin-top: 3rem;
+}
+
+#aboutTitle > a {
+    font-size: 4rem;
+    font-family: 'Covered By Your Grace', cursive;
+    color: rgb(255, 255, 255);
+
+    text-decoration-line: underline;
+    text-decoration-color: rgb(231, 178, 13, 70%);
+
+    margin-left: 1rem;
+
+    flex: 1;
+}
+
+#aboutTitle > .top-list {
+    color: rgba(255, 255, 255, 60%);
+
+    margin-bottom: 1rem;
+}
+
+#aboutTitle > .top-list > .num {
+    background-color: rgba(255, 255, 255);
+    color: rgba(0, 0, 0);
+    font-weight: bold;
+
+    border-radius: 50%;
+    border: 0.1rem solid rgb(231, 178, 13);
+
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#aboutBox {
+    width: 75rem;
+    height: 36rem;
+
+    background-color: rgba(255, 255, 255, 20%);
+    border-radius: 2rem;
+}
+
+#aboutBox > .about-content {
+    align-items : center;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+#aboutBox > .about-content > .photo {
+    width: 23rem;
+    height: 36rem;
+    background-color: rgb(234, 232, 232);
+    box-shadow: 3px 3px 3px 3px #171616;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-right: 3rem;
+}
+
+#aboutBox > .about-content > .photo > .pc {
+    border-radius: 60%;
+    box-shadow: 3px 3px 3px 3px #1c1c1c;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    width: 18rem;
+    height: 18rem;
+
+    background-color: rgba(143, 137, 116, 0.95);
+
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+#aboutBox > .about-content > .photo > .pc > .img {
+    max-width: 12.7rem;
+    margin-top: 0.5rem;
+
+    cursor: unset;
+}
+
+#aboutBox > .about-content > .photo > .about {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    margin-top: 2rem;
+}
+
+#aboutBox > .about-content > .photo > .about > .about-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(56, 54, 54);
+    font-family: 'Ubuntu', sans-serif;
+    width: 20rem;
+
+    border-bottom: 0.15rem solid rgba(37, 36, 36, 0.6);
+
+    margin-bottom: 0.8rem;
+}
+
+#aboutBox > .about-content > .photo > .about > .about-content {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+
+    background-color: rgba(169, 168, 168, 0.3);
+    width: 18rem;
+
+    border-radius: 0.5rem;
+
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+#aboutBox > .about-content > .photo > .about > .about-content > .one {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: rgba(28, 28, 28, 70%);
+}
+
+#aboutBox > .about-content > .photo > .about > .about-content > .two {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+#aboutBox > .about-content > .about-container {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2.7rem 2rem 2rem 3rem;
+
+    /*background-color: rgba(255, 255, 255, 80%);*/
+    /*box-shadow: 3px 3px 3px 3px #090909;*/
+    height: 28rem;
+    width: 40rem;
+    border-radius: 1rem;
+
+    z-index: 10;
+
+    /*transform: translateX(50%);*/
+    /*opacity: 0;*/
+    /*transition: .8s;*/
+}
+
+#aboutBox > .about-content > .about-container.active {
+    /*transform: translateX(0);*/
+    /*opacity: 1;*/
+}
+
+#aboutBox > .about-content > .about-container > .education,
+#aboutBox > .about-content > .about-container > .work-experience,
+#aboutBox > .about-content > .about-container > .certificate,
+#aboutBox > .about-content > .about-container > .archiving {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    margin-bottom: 2.5rem;
+}
+
+#aboutBox > .about-content > .about-container > .education > .education-title,
+#aboutBox > .about-content > .about-container > .work-experience > .experience-title,
+#aboutBox > .about-content > .about-container > .certificate > .certificate-title,
+#aboutBox > .about-content > .about-container > .archiving > .archiving-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 60%);
+    font-family: 'Ubuntu', sans-serif;
+    width: 40rem;
+
+    border-bottom: 0.15rem solid rgba(255, 255, 255, 40%);
+    margin-bottom: 0.5rem;
+}
+
+#aboutBox > .about-content > .about-container > .education > .content,
+#aboutBox > .about-content > .about-container > .work-experience > .content,
+#aboutBox > .about-content > .about-container > .certificate > .content,
+#aboutBox > .about-content > .about-container > .archiving > .content {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+}
+
+#aboutBox > .about-content > .about-container > .education > .content > .one,
+#aboutBox > .about-content > .about-container > .work-experience > .content > .one,
+#aboutBox > .about-content > .about-container > .certificate > .content > .one,
+#aboutBox > .about-content > .about-container > .archiving > .content > .one {
+    margin-right: 2rem;
+
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#aboutBox > .about-content > .about-container > .education > .content > .two,
+#aboutBox > .about-content > .about-container > .work-experience > .content > .two,
+#aboutBox > .about-content > .about-container > .certificate > .content > .two,
+#aboutBox > .about-content > .about-container > .archiving > .content > .two {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    color: rgba(255, 255, 255, 60%);
+}
+
+.it {
+    color: rgb(231, 178, 13);
+    font-weight: bold;
+}
+
+.iconSize {
+    font-size: 1.4rem;
+}
+
+.github,
+.tistory {
+    color: rgba(255, 255, 255, 60%);
+}
+
+.github:hover,
+.tistory:hover {
+    color: rgba(255, 255, 255, 90%);
+}
+
+
+
+
+/* PROJECT */
+#projectTitle,
+#projectTitle2 {
+    align-items : flex-end;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+
+    width: 75rem;
+
+    margin-top: 3rem;
+}
+
+#projectTitle > a,
+#projectTitle2 > a {
+    font-size: 4rem;
+    font-family: 'Covered By Your Grace', cursive;
+    color: rgb(255, 255, 255);
+
+    text-decoration-line: underline;
+    text-decoration-color: rgb(231, 178, 13, 70%);
+
+    margin-left: 1rem;
+
+    flex: 1;
+}
+
+#projectTitle > .top-list,
+#projectTitle2 > .top-list {
+    color: rgba(255, 255, 255, 60%);
+
+    margin-bottom: 1rem;
+}
+
+#projectTitle > .top-list > .num,
+#projectTitle2 > .top-list > .num {
+    background-color: rgba(255, 255, 255);
+    color: rgba(0, 0, 0);
+    font-weight: bold;
+
+    border-radius: 50%;
+    border: 0.1rem solid rgb(231, 178, 13);
+
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#projectBox,
+#projectBox2 {
+    width: 75rem;
+    height: 38rem;
+
+    background-color: rgba(255, 255, 255, 20%);
+    border-radius: 2rem;
+}
+
+#projectBox > .projectContent,
+#projectBox2 > .projectContent {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+}
+
+#projectBox > .projectContent > .team,
+#projectBox2 > .projectContent > .team {
+    /*transform: translateX(-50%);*/
+    /*opacity: 0;*/
+    /*transition: .8s;*/
+
+    margin-bottom: 4rem;
+    width: 38rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+/*#projectBox > .projectContent > .team.active {*/
+/*    transform: translateX(0);*/
+/*    opacity: 1;*/
+/*}*/
+
+#projectBox > .projectContent > .team > .one,
+#projectBox2 > .projectContent > .team > .one {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+}
+
+#projectBox > .projectContent > .team > .one > .teamTitle {
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, 80%);
+
+    font-family: 'Ubuntu', sans-serif;
+
+    width: 30rem;
+
+    align-items : flex-end;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+#projectBox > .projectContent > .team > .one > .teamTitle > .box,
+#projectBox2 > .projectContent > .team > .one > .teamTitle > .box {
+    background-color: rgba(0, 0, 0, 30%);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+
+    border-radius: 0.5rem;
+}
+
+#projectBox > .projectContent > .team > .one > .teamTitle > .href {
+    margin-left: 3rem;
+}
+
+/*#projectBox > .projectContent > .team > .one > .teamTitle > .href > .site,*/
+/*#projectBox > .projectContent > .team > .one > .teamTitle > .href > .git {*/
+/*    !*padding: 0.5rem 1rem 0.5rem 1rem;*!*/
+/*    !*background-color: rgba(0, 0, 0, 40%);*!*/
+/*    !*border-radius: 0.5rem;*!*/
+
+/*    transition: all 0.2s linear;*/
+/*}*/
+
+#projectBox > .projectContent > .team > .one > .teamTitle > .href > .site {
+    margin-bottom: 0.5rem;
+}
+
+#projectBox > .projectContent > .team > .one > .teamTitle > .href > .site > a {
+    color: rgba(255, 255, 255, 50%);
+    font-size: 1rem;
+}
+
+#projectBox > .projectContent > .team > .one > .teamTitle > .href > .git > a {
+    color: rgba(231, 178, 13, 85%);
+}
+
+#projectBox > .projectContent > .team > .one > .teamTitle > .href > .site > a:hover ,
+#projectBox > .projectContent > .team > .one > .teamTitle > .href > .git > a:hover {
+    color: rgba(255, 255, 255, 90%);
+}
+
+#projectBox > .projectContent > .team > .one > .teamContent {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+
+    margin-left: 5rem;
+    margin-top: 2rem;
+
+    border-right: 0.4rem dashed rgba(255, 255, 255, 10%);
+}
+
+#projectBox > .projectContent > .team > .one > .teamContent > .one {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    margin-right: 3rem;
+}
+
+#projectBox > .projectContent > .team > .one > .teamContent > .one > .team1,
+#projectBox > .projectContent > .team > .one > .teamContent > .one > .team2 {
+    margin-right: 2rem;
+    border: 0.0625rem solid rgb(93, 92, 92);
+    box-shadow: 1px 1px 6px 3px rgb(0, 0, 0);
+
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    width: 22rem;
+    margin-bottom: 2rem;
+}
+
+#projectBox > .projectContent > .team > .one > .teamContent > .one > .team1:hover,
+#projectBox > .projectContent > .team > .one > .teamContent > .one > .team2:hover {
+    transform: scale(1.6);
+}
+
+#teamDetail {
+    align-items : center;
+    display : flex;
+    flex-direction : row;
+    justify-content: center;
+
+    width: 38rem;
+    height: 38rem;
+    margin-left: 3rem;
+
+}
+
+#teamDetail > .button-left,
+#teamDetail > .button-right {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 60%);
+
+    cursor: pointer;
+}
+
+#teamDetail > .button-left:hover,
+#teamDetail > .button-right:hover {
+    color: rgba(0, 0, 0, 90%);
+}
+
+#teamDetail > .outer {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+
+    width: 450px;
+    height: 35rem;
+    background-color: rgba(255, 255, 255, 90%);
+    border-radius: 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    padding: 0 1rem 0 1rem;
+
+    overflow-x: hidden;
+}
+
+#teamDetail > .outer > .inner-list {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+
+    width: 450px;
+
+    transition: .3s ease-out;
+}
+
+#teamDetail > .outer > .inner-list > .inner {
+    width: 450px;
+
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    padding: 0 12px;
+    margin-right: 0.4rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box {
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function {
+    overflow: hidden;
+    width: 27.9rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > a {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box {
+    width: 23.5rem;
+    height: 28rem;
+    background-color: rgba(169, 168, 168, 0.3);
+
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .title-box > .title {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(0, 0, 0);
+
+    margin-right: 1rem;
+
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .title-box > .sub-title {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(59, 59, 59);
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .content {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+    margin-bottom: 3rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+
+    margin-bottom: 1rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills-img {
+    width: 23rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills-img > .top,
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills-img > .bottom {
+    align-items : center;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills-img > .bottom {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills-img > .top > img,
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills-img > .bottom > img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .skills-img > .top > .css {
+    width: 2.2rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .mat-title {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .mat-content {
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+    margin-top: 0.4rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .intro-box > .mat-content > .sub-skill {
+    font-size: 0.7rem;
+    margin-left: 0.4rem;
+    color: rgb(44, 43, 43);
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .img-box {
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+
+    overflow: hidden;
+    width: 28rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function > .img-box > .f1 {
+    max-width: 26rem;
+}
+
+#teamDetail > .outer > .inner-list > .inner > .function-box > .function-content {
+    width: 25rem;
+    height: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+    font-size: 1.7rem;
+
+    background-color: rgba(0, 0, 0, 50%);
+    border-radius: 1rem;
+
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+
+#projectBox2 > .projectContent > .team > .one > .teamTitle {
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 80%);
+
+    font-family: 'Ubuntu', sans-serif;
+
+    width: 30rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+/* 추가할 때 이거 지우기 */
+.prepare {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 80%);
+
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+
+    width: 80rem;
+    height: 20rem;
+}
+
+
+
+
+/* bottom */
+#bottom {
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 80%);
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#bottom > .contact {
+    font-size: 3rem;
+    font-family: 'Covered By Your Grace', cursive;
+
+    text-decoration-line: underline;
+    text-decoration-color: rgb(231, 178, 13, 70%);
+
+    margin-bottom: 2rem;
+}
+
+#bottom > .real-bottom {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    font-size: 1.3rem;
+}
+
+#bottom > .real-bottom > .call {
+    margin-bottom: 0.5rem;
+}
+
+#bottom > .rights {
+    font-size: 1rem;
+
+    margin-top: 4rem;
+    color: rgb(147, 143, 143);
+}
+
+.ye {
+    text-decoration: none;
+    color: rgba(231, 178, 13, 60%);
+}
