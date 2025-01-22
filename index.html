@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YEEUN</title>
+    <link rel="stylesheet" href="/index/resources/stylesheets/jquery.fullPage.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/index/resources/scripts/jquery.fullPage.js"></script>
+    <link rel="stylesheet" href="/index/resources/stylesheets/index.css">
+    <script defer src="/index/resources/scripts/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Gowun+Batang:wght@700&family=Ubuntu:ital,wght@0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Gowun+Batang:wght@700&family=Gowun+Dodum&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/282afddd53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="ul">
+            <li data-menuanchor="section1"><a class="a select" rel="select" href="#section1">HOME</a></li>
+            <li data-menuanchor="section2"><a class="a select" rel="select" href="#section2">INTRODUCE</a></li>
+            <li data-menuanchor="section3"><a class="a select" rel="select" href="#section3">ABOUT</a></li>
+            <li data-menuanchor="section4"><a class="a select" rel="select" href="#section4">PROJECTS</a></li>
+            <li data-menuanchor="section5"><a class="a select" rel="select" href="#section5">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="fullpage">
+    <section class="section">
+        <div class="slide" id="home">
+            <div id="title">
+                <div class="portfolio">
+                    <a>YEEUN's</a>
+                    <br>
+                    <a>PORTFOLIO</a>
+                </div>
+                <div class="laptop">
+                    <div class="dd">
+                        <img class="pp-img" alt="laptop" src="/index/resources/images/pp.png">
+                    </div>
+                    <img class="laptop-img" alt="laptop" src="/index/resources/images/laptop.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div id="introTitle">
+            <a rel="move">INTRODUCE</a>
+            <div class="top-list">
+                <a class="name">OHYEEUN PORTFOLIO</a>
+                <a class="num">02</a>
+            </div>
+        </div>
+        <div id="introContainer" rel="move">
+            <div class="introTop" rel="move">
+                <div class="text" rel="text"></div>
+            </div>
+            <div class="introBottom" rel="move">
+                <a>빠르게 성장하는 개발자가 되기 위한 본질은
+                    <br>
+                    목적과 방향, 그리고 열의에 있다고 생각합니다.
+                    <br>
+                    능동적이고 적극적인 커뮤니케이션으로,
+                    <br>
+                    서비스 개발과 비즈니스 발전을 향해 달려가겠습니다.
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="slide">
+            <div id="aboutTitle">
+                <a rel="move">ABOUT ME</a>
+                <div class="top-list">
+                    <a class="name">
+                        OHYEEUN PORTFOLIO</a>
+                    <a class="num">03</a>
+                </div>
+            </div>
+            <div id="aboutBox">
+                <div class="about-content">
+                    <div class="photo" rel="move">
+                        <div class="pc" onload="slideShow()">
+                            <input class="img slide1" type="image" alt="me" src="/index/resources/images/me.JPG">
+<!--                            <input class="img slide1" type="image" alt="me" src="/index/resources/images/img2.jpg">-->
+<!--                            <input class="img slide1" type="image" alt="me" src="/index/resources/images/IMG_3421.jpg">-->
+                        </div>
+                        <div class="about">
+                            <a class="about-text">OH YEEUN</a>
+                            <div class="about-content">
+                                <div class="one">
+                                    <a class="hp">연락처</a>
+                                    <a class="birth">생년월일</a>
+                                    <a class="email">이메일</a>
+                                    <a class="address">주소</a>
+                                </div>
+                                <div class="two">
+                                    <a class="hp-two">010 2574 4960</a>
+                                    <a class="birth-two">1997. 02. 13</a>
+                                    <a class="email-two">eun8548@naver.com</a>
+                                    <a class="address-two">경상북도 구미시</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-container" rel="move">
+                        <div class="education">
+                            <a class="education-title"><i
+                                    class="iconSize fa-solid fa-book"></i>&nbsp;&nbsp;EDUCATION</a>
+                            <div class="content">
+                                <a class="one">2022.08.25 - 2023.01.31</a>
+                                <div class="it">
+                                    대구 코리아 IT
+                                    <br>
+                                    임베디드 소프트웨어 융합 풀스택 개발자 양성과정 수료
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-experience">
+                            <a class="experience-title"><i class="iconSize fa-solid fa-briefcase"></i>&nbsp;&nbsp;WORK
+                                EXPERIENCE</a>
+                            <div class="content">
+                                <a class="one">2020.08.18 - 2021.09.30</a>
+                                <div class="two">
+                                    식품회사 연구개발팀 근무
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate">
+                            <a class="certificate-title"><i class="iconSize fa-solid fa-award"></i>&nbsp;&nbsp;CERTIFICATE</a>
+                            <div class="content">
+                                <a class="one">
+                                    2022.06
+                                    <br>
+                                    2019.02
+                                    <br>
+                                    2016.07
+                                </a>
+                                <div class="two">
+                                    <a class="it">정보처리기사</a>
+                                    <a>컴퓨터활용능력2급</a>
+                                    <a>2종보통운전면허</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="archiving">
+                            <a class="archiving-title"><i class="iconSize fa-solid fa-floppy-disk"></i>&nbsp;&nbsp;CHANNEL</a>
+                            <div class="content">
+                                <a class="one">
+                                    TISTORY
+                                </a>
+                                <div class="two">
+                                    <a href="https://pickmeplease.tistory.com/" target='_blank' class="tistory">https://pickmeplease.tistory.com/</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="slide">
+            <div id="projectTitle">
+                <a rel="move">PROJECTS</a>
+                <div class="top-list">
+                    <a class="name">OHYEEUN PORTFOLIO</a>
+                    <a class="num">04</a>
+                </div>
+            </div>
+            <div id="projectBox">
+                <div class="projectContent">
+                    <div class="team" rel="move">
+                        <div class="one">
+                            <div class="teamTitle">
+                                <div class="box">
+                                    <i class="icon fa-solid fa-user-group"></i>&nbsp;
+                                    TEAM PROJECT
+                                </div>
+                                <div class="href">
+                                    <div class="site">
+                                        <a target="_blank" href="https://dios.yegoood.com/"><i class="fa-brands fa-internet-explorer"></i> https://dios.yegoood.com/</a>
+                                    </div>
+                                    <div class="git">
+                                        <a target="_blank" href="https://github.com/blackgreenDios/dios"><i class="fa-brands fa-github"></i> Github</a>
+                                        <a> / </a>
+                                        <a target="_blank" href="https://pickmeplease.tistory.com/37"> Tistory</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamContent">
+                                <div class="one">
+                                    <img src="/index/resources/images/pj1.GIF" class="team1" alt="team">
+                                    <img src="/index/resources/images/pj2.GIF" class="team2" alt="team">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="teamDetail">
+                            <a class="button-left">
+                                <i class="icon fa-solid fa-circle-arrow-left"></i>
+                            </a>
+                            <div class="outer">
+                                <div class="inner-list">
+                                    <div class="inner">
+                                        <div class="function-box">
+                                            <div class="function">
+                                                <a><i class="fa-solid fa-computer"></i>&nbsp;&nbsp;소개</a>
+                                                <div class="intro-box">
+                                                    <div class="title-box">
+                                                        <a class="title">DIOS</a>
+                                                        <a class="sub-title">: D to I, O to S</a>
+                                                    </div>
+                                                    <a class="content">
+                                                        기록을 통해 운동습관 형성에
+                                                        <br>
+                                                        도움을 주는 웹사이트
+                                                    </a>
+                                                    <a class="skills">SKILLS</a>
+                                                    <div class="skills-img">
+                                                        <div class="top">
+                                                            <img src="/index/resources/images/Html.png">
+                                                            <img class="css" src="/index/resources/images/CSS.png">
+                                                            <img src="/index/resources/images/js.png">
+                                                            <img src="/index/resources/images/Java_Logo.png">
+                                                        </div>
+                                                        <div class="bottom">
+                                                            <img src="/index/resources/images/MariaDB.png">
+                                                            <img src="/index/resources/images/mysql.png">
+                                                            <img src="/index/resources/images/MyBatis.png">
+                                                            <img src="/index/resources/images/spring%20boot.png">
+                                                        </div>
+                                                    </div>
+                                                    <a class="mat-title">MY PART</a>
+                                                    <div class="mat-content">
+                                                        <a><i class="fa-solid fa-laptop-code"></i>&nbsp;&nbsp; 운동측정기능
+                                                            (머신러닝) <a class="sub-skill">: 프론트/백</a></a>
+                                                        <br>
+                                                        <a><i class="fa-solid fa-laptop-code"></i>&nbsp;&nbsp; 기록장 <a
+                                                                class="sub-skill">: 프론트/백</a></a>
+                                                        <br>
+                                                        <a><i class="fa-solid fa-laptop-code"></i>&nbsp;&nbsp;
+                                                            장바구니/주문/주문완료 페이지 <a class="sub-skill">: 프론트/백</a></a>
+                                                        <br>
+                                                        <a><i class="fa-solid fa-laptop-code"></i>&nbsp;&nbsp; 홈/쇼핑몰 페이지
+                                                            <a class="sub-skill">: 프론트</a></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="function-box">
+                                            <div class="function">
+                                                <a><i class="fa-solid fa-computer"></i>&nbsp;&nbsp;주요 기능</a>
+                                                <div class="img-box" onload="slideShow()">
+                                                    <input class="f1 slide2" alt="function" type="image"
+                                                           src="/index/resources/images/f1.png">
+                                                    <input class="f1 slide2" alt="function" type="image"
+                                                           src="/index/resources/images/f2.png">
+                                                    <input class="f1 slide2" alt="function" type="image"
+                                                           src="/index/resources/images/f3.png">
+                                                </div>
+                                            </div>
+                                            <div class="function-content">
+                                                <a class="text">로그인 & 회원가입</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="function-box">
+                                            <div class="function">
+                                                <a><i class="fa-solid fa-computer"></i>&nbsp;&nbsp;주요 기능</a>
+                                                <div class="img-box" onload="slideShow()">
+                                                    <input class="f1 slide3" alt="function" type="image"
+                                                           src="/index/resources/images/f4.png">
+                                                    <input class="f1 slide3" alt="function" type="image"
+                                                           src="/index/resources/images/f5.png">
+                                                    <input class="f1 slide3" alt="function" type="image"
+                                                           src="/index/resources/images/f6.png">
+                                                </div>
+                                            </div>
+                                            <div class="function-content">
+                                                <a class="text">운동측정 & 기록</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="function-box">
+                                            <div class="function">
+                                                <a><i class="fa-solid fa-computer"></i>&nbsp;&nbsp;주요 기능</a>
+                                                <div class="img-box">
+                                                    <input class="f1" alt="function" type="image"
+                                                           src="/index/resources/images/f7.png">
+                                                </div>
+                                            </div>
+                                            <div class="function-content">
+                                                <a class="text">게시판</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="function-box">
+                                            <div class="function">
+                                                <a><i class="fa-solid fa-computer"></i>&nbsp;&nbsp;주요 기능</a>
+                                                <div class="img-box" onload="slideShow()">
+                                                    <input class="f1 slide4" alt="function" type="image"
+                                                           src="/index/resources/images/f8.png">
+                                                    <input class="f1 slide4" alt="function" type="image"
+                                                           src="/index/resources/images/f9.png">
+                                                    <input class="f1 slide4" alt="function" type="image"
+                                                           src="/index/resources/images/f10.png">
+                                                </div>
+                                            </div>
+                                            <div class="function-content">
+                                                <a class="text">쇼핑몰 & 장바구니</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button-right">
+                                <i class="icon fa-solid fa-circle-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div id="projectTitle2">
+                <a rel="move">PROJECTS</a>
+                <div class="top-list">
+                    <a class="name">OHYEEUN PORTFOLIO</a>
+                    <a class="num">05</a>
+                </div>
+            </div>
+            <div id="projectBox2">
+                <div class="projectContent">
+                    <div class="team" rel="move">
+                        <div class="one">
+                            <div class="teamTitle">
+                                <div class="box">
+                                    <i class="icon fa-solid fa-user"></i>&nbsp;
+                                    PERSONAL PROJECT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prepare">준비 중입니다.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section fp-auto-height">
+        <div id="bottom">
+            <a class="contact">CONTACT</a>
+            <div class="real-bottom">
+                <div class="call">
+                    <i class="ye fa-solid fa-phone"></i>&nbsp;&nbsp; 010 2574 4960
+                </div>
+                <div class="email">
+                    <i class="ye fa-solid fa-envelope"></i>&nbsp;&nbsp; eun8548@naver.com
+                </div>
+            </div>
+            <a class="rights">
+                <i>© 2023. Oh YeEun All Rights Reserved.</i>
+            </a>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
