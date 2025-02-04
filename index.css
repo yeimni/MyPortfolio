@@ -527,6 +527,7 @@ header nav ul li > .select.selected {
 
 
 
+
 /* PROJECT */
 #projectTitle,
 #projectTitle2 {
@@ -598,7 +599,7 @@ header nav ul li > .select.selected {
     /*transition: .8s;*/
 
     margin-bottom: 4rem;
-    width: 38rem;
+    /*width: 38rem;*/
 
     align-items : flex-start;
     display : flex;
@@ -948,7 +949,7 @@ header nav ul li > .select.selected {
 
 #projectBox2 > .projectContent > .team > .one > .teamTitle {
     font-size: 1.1rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
     margin-top: 2rem;
     color: rgba(255, 255, 255, 80%);
 
@@ -961,6 +962,160 @@ header nav ul li > .select.selected {
     flex-direction : row;
     justify-content: flex-start;
 }
+
+#projectBox2 > .projectContent > .team > .one > .teamContent {
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    border-right: 0.4rem dashed rgba(255, 255, 255, 10%);
+}
+
+#projectBox2 > .projectContent > .team > .one > .teamContent > .one {
+    background-color: white;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    width: 30rem;
+    height: 30rem;
+
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+#projectBox2 > .projectContent > .team > .one > .teamContent > .one > .title {
+    margin-top: 1rem;
+    width: 27rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#projectBox2 > .projectContent > .team > .one > .teamContent > .one > .period {
+    font-size: 0.9rem;
+    color: #777777;
+    width: 25rem;
+
+    margin-top: 0.1rem;
+
+    align-items : flex-end;
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-end;
+}
+
+#projectBox2 > .projectContent > .team > .one > .teamContent > .one > .content {
+    width: 25rem;
+    height: 20rem;
+    background-color: rgba(169, 168, 168, 0.3);
+
+    padding: 1rem 1rem 1rem 1rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+#projectBox2 > .projectContent > .team > .one > .teamContent > .one > .content > .line > .nextLine {
+    margin-left: 1rem;
+}
+
+#projectBox2 > .projectContent > .team > .one > .teamContent > .one > .content > .main {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+#projectBox2 > .projectContent > .team > .one > .teamContent > .one > .content > .main > .fa-computer {
+    margin-right: 0.5rem;
+}
+
+#projectBox2 > .projectContent > .team > .two {
+    width: 35rem;
+    height: 30rem;
+    background-color: white;
+
+    margin-left: 2rem;
+    margin-top: 5.1rem;
+    border-radius: 1rem;
+
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+
+#projectBox2 > .projectContent > .team > .two > .content {
+    width: 31rem;
+    height: 26rem;
+    background-color: rgba(169, 168, 168, 0.3);
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+#projectBox2 > .projectContent > .team > .two > .content > .role,
+#projectBox2 > .projectContent > .team > .two > .content > .skills {
+    margin-left: 1rem;
+    margin-right: 2rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+#projectBox2 > .projectContent > .team > .two > .content > .role > .title,
+#projectBox2 > .projectContent > .team > .two > .content > .skills > .title {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+#projectBox2 > .projectContent > .team > .two > .content > .role > .title > .fa-computer,
+#projectBox2 > .projectContent > .team > .two > .content > .skills > .title > .fa-computer {
+    margin-right: 0.5rem;
+}
+
+#projectBox2 > .projectContent > .team > .two > .content > .role > .con > .line > .nextLine {
+    margin-left: 1rem;
+
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+#projectBox2 > .projectContent > .team > .two > .content > .role > .con > .anLine {
+    align-items : flex-start;
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+}
+
+#projectBox2 > .projectContent > .team > .two > .content > .role > .con > .line > .nextLine > .ex,
+#projectBox2 > .projectContent > .team > .two > .content > .role > .con > .anLine > .ex {
+    font-weight: bold;
+    background-color: rgba(231, 178, 13, 0.34);
+}
+
+
 
 /* 추가할 때 이거 지우기 */
 .prepare {
@@ -977,8 +1132,6 @@ header nav ul li > .select.selected {
     width: 80rem;
     height: 20rem;
 }
-
-
 
 
 /* bottom */
